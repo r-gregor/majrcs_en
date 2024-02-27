@@ -222,3 +222,6 @@ alias vimb='vim -u $HOME/.dotvimrc_monochrome'
 alias vimr='vim -M'
 alias vimm='vim -M'
 
+# 20240227 -- preventc cd to write absolute path at change ...
+alias cd='>/dev/null cd'
+
