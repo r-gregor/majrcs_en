@@ -119,8 +119,8 @@ explain () {
 }
 
 # 20230907
-export CODING_LOCAL=$(cat ~/.tmp/CODING_LOCAL)
-export CODING_REMOTE=$(cat ~/.tmp/CODING_REMOTE)
+# export CODING_LOCAL=$(cat ~/.tmp/CODING_LOCAL)
+# export CODING_REMOTE=$(cat ~/.tmp/CODING_REMOTE)
 
 # 20231208
 export CDPATH='.:~/majstaf_en:~/majstaf_en/coding2/testing:~/majstaf_en/en_git:/c/Users/gregor.redelonghi/majstaf_en/drpbx-en'
