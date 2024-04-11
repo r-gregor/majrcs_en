@@ -205,8 +205,9 @@ alias spdf='/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/SumatraPDF-3.3.3-6
 # 20221213
 alias ccat='highlight -O ansi'
 
-#20221222
+#20240411
 alias BrthReminder='/home/gregor.redelonghi/majstaf_en/majbin_en/BrthReminder/BrthReminder'
+alias BrthReminder_colors='/home/gregor.redelonghi/majstaf_en/majbin_en/BrthReminder/BrthReminder_colors'
 
 alias fzf='fzf --reverse'
 alias vimf='vim $(fzf --reverse)'
