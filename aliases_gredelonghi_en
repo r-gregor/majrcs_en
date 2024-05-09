@@ -55,14 +55,14 @@ alias rmi='rm -vi'
 alias llh='ls -lAd --color ./.*'
 
 # --------------------------------------------------------
-# alias dbot='cd /c/Users/gregor.redelonghi/DBOT'
-#
-alias dbot='cd /c/Users/gregor.redelonghi/majstaf_en/drpbx-en/ODPRTO/_TXT'
-alias dbop='cd /c/Users/gregor.redelonghi/majstaf_en/drpbx-en/ODPRTO/_PYTHON'
-alias dbor='cd /c/Users/gregor.redelonghi/majstaf_en/drpbx-en/ODPRTO/_RUST'
-alias dboj='cd /c/Users/gregor.redelonghi/majstaf_en/drpbx-en/ODPRTO/_JAVA' 
-alias dbog='cd /c/Users/gregor.redelonghi/majstaf_en/drpbx-en/ODPRTO/_GO' 
-alias dboc='cd /c/Users/gregor.redelonghi/majstaf_en/drpbx-en/ODPRTO/_C_and_Cpp'
+# 20240508
+base_pth="$HOME/majstaf_en/engit/knowledgedb"
+alias dbot='cd ${base_pth}/_TXT'
+alias dbop='cd ${base_pth}/_PYTHON'
+alias dbor='cd ${base_pth}/_RUST'
+alias dboj='cd ${base_pth}/_JAVA'
+alias dbog='cd ${base_pth}/_GO'
+alias dboc='cd ${base_pth}/_C_and_Cpp'
 
 # --------------------------------------------------------
 # 20240130

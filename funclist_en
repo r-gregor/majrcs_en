@@ -293,3 +293,6 @@ function pcs() {
 	cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/processing-4.2-windows-x64/processing-4.2/processing.exe
 }
 
+function neww() {
+	/usr/bin/mintty -e /usr/bin/bash -c "~/majstaf_en/majbin_en/BrthReminder/BrthReminder_c_color.exe;cd;bash -i"
+}
