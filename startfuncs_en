@@ -178,7 +178,8 @@ function fnc() {
 # start quickstart and tmux [20190326]
 function qtm() {
     qckstrt
-    tmxs    
+    # tmxs
+	zze
 }
 
 function cdpg_to_utf8() {
