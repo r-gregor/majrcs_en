@@ -124,3 +124,5 @@ explain () {
 
 # 20231208
 export CDPATH='.:~/majstaf_en:~/majstaf_en/coding2/testing:~/majstaf_en/en_git:/c/Users/gregor.redelonghi/majstaf_en/drpbx-en'
+export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/c3-windows-Release"
+
