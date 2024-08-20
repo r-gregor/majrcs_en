@@ -26,7 +26,6 @@ alias cp='cp -n'
 # alias grepc='GREP_COLOR="mt=01;31" LANG=C grep --color=auto'
 alias grepc='GREP_COLOR="mt=01;31" LANG=C grep --color=always'
 
-alias hst='history'
 alias xx='logout'
 alias opnu='source /home/gregor.redelonghi/majstaf_en/majbin_en/opn/opnu'
 alias opnw='source /home/gregor.redelonghi/majstaf_en/majbin_en/opn/opnw'
@@ -68,6 +67,7 @@ alias dboc='cd ${base_pth}/_C_and_Cpp'
 # 20240130
 # moved to majbin script
 # alias hstl="history > $HOME/majstaf_en/seznami_en/history-en.dat_$(date +%Y%m%d-%H%M%S)"
+alias hstlp="history > $HOME/majstaf_en/seznami_en/history-en_$(date +%Y%m%d-%H%M%S).txt"
 
 ydl_cmd="/usr/local/bin/yt-dlp"
 alias ydlF="${ydl_cmd} -F"
