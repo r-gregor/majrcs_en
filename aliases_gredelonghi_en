@@ -226,3 +226,7 @@ alias vimm='vim -M'
 # 20240227 -- preventc cd to write absolute path at change ...
 alias cd='>/dev/null cd'
 
+# 20240821 -- pipe list of files to 'uimp' to open them
+#             readonly as separate tabs in vim
+alias uimp=' xargs -ro vim -Mp'
+
