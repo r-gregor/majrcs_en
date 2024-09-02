@@ -91,8 +91,8 @@ export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/${NODEJS}
 export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/dmd.2.093.1.windows/dmd2/windows/bin"
 
 # none /cygdrive cygdrive binary,posix=0,user 0 0
-export GOROOT='C:\Users\gregor.redelonghi\majstaf_en\majprogs_en\go1.19.windows-amd64\go'
-export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/go1.19.windows-amd64/go/bin"
+export GOROOT='C:\Users\gregor.redelonghi\majstaf_en\majprogs_en\go1.23.0.windows-amd64\go'
+export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/go1.23.0.windows-amd64/go/bin"
 
 # 20230110
 # export CDPATH=".:~:~/majstaf_en:/c/Users/gregor.redelonghi/majstaf_en/drpbx-en/ODPRTO"
