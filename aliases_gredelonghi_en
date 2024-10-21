@@ -186,6 +186,7 @@ alias rclone='/usr/local/bin/rclone -v'
 # 2022
 #
 alias nvol='/usr/bin/git --git-dir=/home/gregor.redelonghi/majstaf_en/engit/vlpprs_en --work-tree=/c/Users/gregor.redelonghi/majstaf_en/en_staf/majvolpejprs'
+alias gst='/usr/bin/git status'
 alias vimn='vim -Nu NORC '
 # alias py='/usr/bin/python3'
 # alias node='/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/node-v14.17.5-win-x64/node.exe'
