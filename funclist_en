@@ -1,5 +1,6 @@
 # last update 20240906_en
 
+gr_MSE=/c/Program\ Files\ \(x86\)/Microsoft/Edge/Application/msedge.exe
 CURRYR=$(date +%Y)
 
 ### Functions ###
@@ -240,3 +241,7 @@ function hstl() {
 	echo "Sccesfully added commands from HISTORY to ${gPth}"
 }
 
+function ure() {
+	gr_GO1="https://ris.jhl.si/"
+	cygstart "$gr_MSE" ${gr_GO1}
+}
