@@ -46,10 +46,10 @@ prompt_left() {
 	red_inv='\e[07;91m'
 	blue_red='\e[00;38;5;111;101m'
 
-	green_bg='\e[00;48;5;35m'
-	green='\e[00;38;5;35m'
-	green_inv='\e[07;38;5;35m'
-	blue_green='\e[00;38;5;111;48;5;35m'
+	green_bg='\e[00;48;5;42m'
+	green='\e[00;38;5;42m'
+	green_inv='\e[07;38;5;42m'
+	blue_green='\e[00;38;5;111;48;5;42m'
 
 	if [ -d ./.git ] || [ -d ./hooks ]; then
 		git_info=" git: $(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' -e 's/$/ /')"
@@ -76,7 +76,7 @@ prompt_next() {
 	# NERD symbols
 	# echo -e  "\[\e[1;31m\]\u21AA \[\e[0m\]"
 	# echo -e  "\[\e[1;31m\] \[\e[0m\]"
-	echo -e  "\[\e[1;31m\] \[\e[0m\]"
+	echo -e  "\[\e[0;31m\] \[\e[0m\]"
 }
 
 # 20241014
