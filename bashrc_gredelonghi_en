@@ -4,7 +4,7 @@ export CURRENT_YEAR_ENV=2024
 
 # 20230511
 # export LESS="-QR"
-export LESS="-QR -x4 -Xr"
+# export LESS="-QR -x4 -Xr"
 
 export HISTCONTROL=erasedups
 export HISTCONTROL=ignoreboth
