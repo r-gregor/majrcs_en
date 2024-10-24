@@ -71,7 +71,15 @@ prompt_left() {
 
 # 20241014
 prompt_next() {
-	echo -e  "\[\e[0;31m\] \[\e[0m\]"
+# check: symbols and prompts_20240214.txt in ~/majstaf_en/metsys_en/
+# export PS1=$'\n\[\e[01;38;5;75m\][\h] \w\n$(parse_git_branch)\[\e[1;31m\]\u21AA \[\e[0m\] '
+# '⧽'  27E9
+# '↪ ' 21AA
+# '▶ ' 25B6
+# '▷ ' 25B7
+# '❱ ' 2771
+#
+	echo -e  " \[\e[0;31m\]\u2771\[\e[0m\]"
 }
 
 # 20241014
