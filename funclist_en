@@ -245,3 +245,10 @@ function ure() {
 	gr_GO1="https://ris.jhl.si/"
 	cygstart "$gr_MSE" ${gr_GO1}
 }
+
+
+function switch_prompt() {
+	choice=$(for FFF in ~/majstaf_en/majrcs_en/bashrc_prompt_*; do echo $(basename $FFF); done | fzf)
+	source ~/majstaf_en/majrcs_en/${choice}
+}
+
