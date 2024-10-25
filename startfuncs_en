@@ -35,14 +35,9 @@ function clc() {
     cygstart /c/Windows/System32/calc.exe
 }
 
-function a20() {
+function a24() {
 # --> a120	start AutoCAD 2020
-    cygstart "/c/Program Files/Autodesk/AutoCAD 2020/acad.exe"
-}
-
-function a22() {
-# --> a120	start AutoCAD 2020
-    cygstart "/c/Program Files/Autodesk/AutoCAD 2022/acad.exe"
+    cygstart "/c/Program Files/Autodesk/AutoCAD 2024/acad.exe"
 }
 
 
@@ -119,16 +114,6 @@ function gg() {
 
 }
 
-function f_rdr() {
-# --> f_rdr	start Abby FineReader
-    cygstart /c/Program\ Files\ \(x86\)/ABBYY\ FineReader\ 8.0\ Professional\ Edition/FineReader.exe
-}
-
-function psp() {
-# --> psp	start PaintShopPro
-    cygstart /c/Program\ Files\ \(x86\)/Jasc\ Software\ Inc/Paint\ Shop\ Pro\ 7/Psp.exe
-}
-
 function my() {
 # --> my	start mintty (new window)
     cygstart /c/users/gregor.redelonghi/majstaf_en/majprogs_en/cygwin64/bin/mintty.exe -p 80,50 -s 180,45 -
@@ -143,18 +128,6 @@ function fsh() {
 	cygstart /c/users/gregor.redelonghi/majstaf_en/majprogs_en/cygwin64/bin/fish
 }
 
-function db() {
-# --> db	start dropbox
-    cygstart /c/Users/gregor.redelonghi/AppData/Roaming/Dropbox/bin/Dropbox.exe
-}
-
-function db1() {
-# --> db	start dropbox
-    cygstart /c/Users/gregor.redelonghi/AppData/Roaming/Dropbox/bin/Dropbox.exe
-}
-
-
-
 function tgd() {
 # --> tgd	start t_gremdomov
     t_gremdomov
@@ -167,7 +140,7 @@ function vgd() {
 
 function fncs() {
     # print descriptions ...
-    gr_fjl="/home/forallusers/startfuncs"
+    gr_fjl="/home/gregor.redelonghi/majstaf_en/majrcs_en/startfuncs_en"
     grep "# --> " ${gr_fjl} | sed 's/# --> //' | sed '$ d'
 }
 
