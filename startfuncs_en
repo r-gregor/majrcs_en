@@ -2,9 +2,9 @@
 ### GLOBAL VARIABLES ------------------------------------------------------------------
 gr_verzija=" [ verzija-en 20171127 | 20180104] "
 gr_OFPOT="/c/Program Files (x86)/Microsoft Office/Office16"
-# gr_GGL="/c/Users/gregor.redelonghi/AppData/Local/Google/Chrome/Application/chrome.exe"
 gr_GGL='/c/Program Files/Google Chrome Portable/GoogleChromePortable.exe'
 gr_FF="/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/FireFox_63.0.1/FirefoxPortable.exe"
+gr_MSE=/c/Program\ Files\ \(x86\)/Microsoft/Edge/Application/msedge.exe
 ### -----------------------------------------------------------------------------------
 
 # functions definitions ---------------------------------------------------------------
@@ -23,8 +23,6 @@ function ppt() {
     cygstart "${gr_OFPOT}/POWERPNT.EXE"
 }
 
-# cygstart "${gr_OFPOT}/OUTLOOK.EXE"
-
 function acr() {
 # --> acr	start AcrobatReader
  cygstart /c/Program\ Files\ \(x86\)/Adobe/Acrobat\ Reader\ DC/Reader/AcroRd32.exe
@@ -36,7 +34,7 @@ function clc() {
 }
 
 function a24() {
-# --> a120	start AutoCAD 2020
+# --> a24	start AutoCAD 2024
     cygstart "/c/Program Files/Autodesk/AutoCAD 2024/acad.exe"
 }
 
@@ -49,12 +47,12 @@ function ntp() {
 
 function npp() {
 # --> npp	start notepad++.exe
-    cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/Notepad++/notepad++.exe 
+    cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/Notepad++/notepad++.exe
     # source ~/bin/00_ukazi/np.sh
 }
 
 function w24() {
-# --> w18	start explorer /c/Users/gregor.redelonghi/2019
+# --> w24	start explorer /c/Users/gregor.redelonghi/2024
     cygstart explorer /E,"c:\Users\gregor.redelonghi\2024"
 }
 
@@ -77,27 +75,27 @@ function mcm() {
     cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/MultiCommander_X64/MultiCommander.exe
 }
 
-function r_ed() {
-# --> r_ed	start ris: elektronska dovolilnica
-    gr_GO1="http://ris-jhl01.jhl.si/prodms/dbris/ris4i_main_4612?p_kateri=ris_elektronska_dovolilnica"
-    cygstart "$gr_IE" ${gr_GO1}
+function ure() {
+# --> ure	start ris: elektronska dovolilnica
+	gr_GO1="https://ris.jhl.si/"
+	cygstart "$gr_MSE" ${gr_GO1}
 }
 
 function r_ue() {
 # --> r_ue	start ris: uporabniški vmesnik
- cygstart "$gr_IE" http://ris.jhl.si
+ cygstart "$gr_MSE" http://ris.jhl.si
 }
 
 function r_po() {
 # --> r_po	start ris: planiranje odsotnosti
     gr_GO2="http://ris-jhl01.jhl.si/prodms/dbris/RIS4I_MAIN_4612?p_kateri=ris4i_dopusti"
-    cygstart "$gr_IE" ${gr_GO2}
+    cygstart "$gr_MSE" ${gr_GO2}
 }
 
 
 function nl() {
 # --> nl	start nukleus (IE - luz)
-    cygstart "$gr_IE" http://gisportal.luz.si/Nukleus
+    cygstart "$gr_MSE" http://gisportal.luz.si/Nukleus
 }
 
 function ne() {
@@ -139,13 +137,10 @@ function vgd() {
 }
 
 function fncs() {
-    # print descriptions ...
+# --> fncs	functions list in startfuncs_en
     gr_fjl="/home/gregor.redelonghi/majstaf_en/majrcs_en/startfuncs_en"
-    grep "# --> " ${gr_fjl} | sed 's/# --> //' | sed '$ d'
-}
-
-function fnc() {
-    fncs
+    grep "br
+	# --> " ${gr_fjl} | sed 's/# --> //' | sed '$ d'
 }
 
 # start quickstart and tmux [20190326]
@@ -167,6 +162,7 @@ function cdpg_to_latin2() {
 }
 
 function cbs() {
+# --> cbs	start codeblocks
 	 cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/CodeBlocks/codeblocks.exe
 }
 
