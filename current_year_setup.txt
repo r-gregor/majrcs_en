@@ -1,0 +1,8 @@
+# curryr=$(date +%Y)
+
+if [ $CURRENT_YEAR_ENV -ne $(date +%Y) ]; then
+	curryr=$CURRENT_YEAR_ENV
+else
+	curryr=$(date +%Y)
+fi
+
