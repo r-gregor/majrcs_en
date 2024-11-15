@@ -8,55 +8,55 @@ gr_MSE=/c/Program\ Files\ \(x86\)/Microsoft/Edge/Application/msedge.exe
 ### -----------------------------------------------------------------------------------
 
 # functions definitions ---------------------------------------------------------------
-function xcl() {
+xcl() {
 # --> xcl	start excel.exe
     cygstart "${gr_OFPOT}/EXCEL.EXE"
 }
 
-function wrd() {
+wrd() {
 # --> wrd	start word.exe
     cygstart "${gr_OFPOT}/WINWORD.EXE"
 }
 
-function ppt() {
+ppt() {
 # --> ppt	start powerpoint.exe
     cygstart "${gr_OFPOT}/POWERPNT.EXE"
 }
 
-function acr() {
+acr() {
 # --> acr	start AcrobatReader
  cygstart /c/Program\ Files\ \(x86\)/Adobe/Acrobat\ Reader\ DC/Reader/AcroRd32.exe
 }
 
-function clc() {
+clc() {
 # --> clc	start calc.exe
     cygstart /c/Windows/System32/calc.exe
 }
 
-function a24() {
+a24() {
 # --> a24	start AutoCAD 2024
     cygstart "/c/Program Files/Autodesk/AutoCAD 2024/acad.exe"
 }
 
 
-function ntp() {
+ntp() {
 # --> ntp	start notepad.exe
  cygstart /c/Windows/System32/\notepad.exe
 }
 
 
-function npp() {
+npp() {
 # --> npp	start notepad++.exe
     cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/Notepad++/notepad++.exe
     # source ~/bin/00_ukazi/np.sh
 }
 
-function w24() {
+w24() {
 # --> w24	start explorer /c/Users/gregor.redelonghi/2024
     cygstart explorer /E,"c:\Users\gregor.redelonghi\2024"
 }
 
-function wh() {
+wh() {
 # --> wh [YR]	start explorer /h/20$YR -- YR = 12 ... 25
     msg="Usage	wh [YR] -- YR = 12, ..., 25"
 
@@ -70,41 +70,41 @@ function wh() {
     fi
 }
 
-function mcm() {
+mcm() {
 # --> mcm	start multicommander.exe
     cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/MultiCommander_X64/MultiCommander.exe
 }
 
-function ure() {
+ure() {
 # --> ure	start ris: elektronska dovolilnica
 	gr_GO1="https://ris.jhl.si/"
 	cygstart "$gr_MSE" ${gr_GO1}
 }
 
-function r_ue() {
+r_ue() {
 # --> r_ue	start ris: uporabniški vmesnik
  cygstart "$gr_MSE" http://ris.jhl.si
 }
 
-function r_po() {
+r_po() {
 # --> r_po	start ris: planiranje odsotnosti
     gr_GO2="http://ris-jhl01.jhl.si/prodms/dbris/RIS4I_MAIN_4612?p_kateri=ris4i_dopusti"
     cygstart "$gr_MSE" ${gr_GO2}
 }
 
 
-function nl() {
+nl() {
 # --> nl	start nukleus (IE - luz)
     cygstart "$gr_MSE" http://gisportal.luz.si/Nukleus
 }
 
-function ne() {
+ne() {
 # --> ne	start nukleus (gc - EN)
     # cygstart $gr_GGL "http://jpe-nukleus.jhl.si/PassAuth/AutoAuth.aspx?ReturnUrl=/nukleus/profile.aspx?id=Energetika@Ljubljana"
     cygstart $gr_FF "http://jpe-nukleus.jhl.si/PassAuth/AutoAuth.aspx?ReturnUrl=/nukleus/profile.aspx?id=Energetika@Ljubljana"
 }
 
-function gg() {
+gg() {
 # --> gc	start google chrome
     # cygstart /c/Users/gregor.redelonghi/AppData/Local/Google/Chrome/Application/chrome.exe
 	# cygstart $gr_GGL
@@ -112,31 +112,31 @@ function gg() {
 
 }
 
-function my() {
+my() {
 # --> my	start mintty (new window)
     cygstart /c/users/gregor.redelonghi/majstaf_en/majprogs_en/cygwin64/bin/mintty.exe -p 80,50 -s 180,45 -
 }
 
-function fsm() {
+fsm() {
 	cygstart /c/users/gregor.redelonghi/majstaf_en/majprogs_en/cygwin64/bin/mintty.exe -p 80,50 -s 180,45 -e /bin/fish
 }
 
 
-function fsh() {
+fsh() {
 	cygstart /c/users/gregor.redelonghi/majstaf_en/majprogs_en/cygwin64/bin/fish
 }
 
-function tgd() {
+tgd() {
 # --> tgd	start t_gremdomov
     t_gremdomov
 }
 
-function vgd() {
+vgd() {
 # --> vgd	start v_gremdomov
     v_gremdomov
 }
 
-function fncs() {
+fncs() {
 # --> fncs	functions list in startfuncs_en
     gr_fjl="/home/gregor.redelonghi/majstaf_en/majrcs_en/startfuncs_en"
     grep "br
@@ -144,24 +144,24 @@ function fncs() {
 }
 
 # start quickstart and tmux [20190326]
-function qtm() {
+qtm() {
     qckstrt
     # tmxs
 	zze
 }
 
-function cdpg_to_utf8() {
+cdpg_to_utf8() {
     # set system codepage from 852 (latin II) to 65001 (utf-8)
     cmd /c chcp 65001 &> /dev/null
 }
 
 
-function cdpg_to_latin2() {
+cdpg_to_latin2() {
     # set system codepage 65001 (utf-8) to 852 (latin II)
     cmd /c chcp 852 &> /dev/null
 }
 
-function cbs() {
+cbs() {
 # --> cbs	start codeblocks
 	 cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/CodeBlocks/codeblocks.exe
 }
