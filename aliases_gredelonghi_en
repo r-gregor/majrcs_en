@@ -34,9 +34,9 @@ alias opnw='source /home/gregor.redelonghi/majstaf_en/majbin_en/opn/opnw'
 alias godos='source /home/gregor.redelonghi/majstaf_en/l2_coding_en/gooo/godossrc.sh'
 
 # --------------------------------------------------------
-alias ydbak='yes | ddbak'
-alias ydlog='yes | ddlog'
-alias ydd='yes | ddbak && yes | ddlog'
+alias ydbak='yes | pddbak'
+alias ydlog='yes | pddlog'
+alias ydd='yes | pddbak && yes | pddlog'
 alias pozeni='source /home/gregor.redelonghi/majstaf_en/l2_coding_en/00_ukazi/run-oneliner.sh'
 
 # --------------------------------------------------------
@@ -45,7 +45,6 @@ alias cp='cp -nv'
 alias mv='mv -nv'
 alias rm='rm -Iv'
 alias cpn='yes n | cp -iv'
-alias sbr='clear && source ~/.bashrc'
 alias sbrn='clear && source ~/.bashrc_nonerd'
 alias sbrb='clear && source ~/.bashrc_base'
 alias vvm='vim ~/.vimrc'

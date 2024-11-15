@@ -23,7 +23,7 @@ ppt() {
     cygstart "${gr_OFPOT}/POWERPNT.EXE"
 }
 
-acr() {
+function acr() {
 # --> acr	start AcrobatReader
  cygstart /c/Program\ Files\ \(x86\)/Adobe/Acrobat\ Reader\ DC/Reader/AcroRd32.exe
 }

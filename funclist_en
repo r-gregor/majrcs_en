@@ -7,24 +7,24 @@ CURRYR=$(date +%Y)
 FF_en="/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/FireFox_63.0.1/FirefoxPortable.exe"
 
 # fukcija, pajpne ukaz na "less -I"
-so() {
+function so() {
 eval "$@" | less -I~
 }
 
 
-cv() {
+function cv() {
 # cdargs "$1" && cd "'cat "$HOME/.cdargs"'" ;
 cdargs "$1" && cd "$(cat "$HOME/.cdargsresult")" ;
-} 
+}
 
 
 # funkcija, ki pred ukazom sprazni(clear) ekran
-kl() {
+function kl() {
 clear && eval "$@"
 }
 
 # history list
-hf() {
+function hf() {
 clear
 if [ $# != 1 ]; then
 	echo 'Number of argumets to hf() must be exactly 1 [one]!'
@@ -33,7 +33,7 @@ else
 fi
 }
 
-lsl() {
+function lsl() {
 	for file in *
 	do
 		if [ -h $file ]; then
@@ -42,7 +42,7 @@ lsl() {
 	done
 }
 
-aln() {
+function aln() {
 	clear
 	eval "$@"
 	echo -e "\n"
@@ -53,12 +53,12 @@ aln() {
 #	printf "%$(tput cols)s\n" | tr " "	"-"
 #	}
 # NOVO - 87 ZNAKOV
-crtice() {
+function crtice() {
 	_ST_ZNAKOV=85
 	printf "%${_ST_ZNAKOV}s\n" | tr " " "-" # draw a line of "-" number-of-chars times ...
 	}
 
-cdh() {
+function cdh() {
 # check if there is one and only on argument:
 	if [ $# -ne 1 ]; then
 		clear
@@ -71,12 +71,12 @@ cdh() {
 }
 
 # added 20160422
-upup(){ DEEP=$1; [ -z "${DEEP}" ] && { DEEP=1; }; for i in $(seq 1 ${DEEP}); do cd ../; done; }
+function upup(){ DEEP=$1; [ -z "${DEEP}" ] && { DEEP=1; }; for i in $(seq 1 ${DEEP}); do cd ../; done; }
 
 
 # added 20160526
 # start new mintty window with screen and lyt-{1,2,3}
-skrn() {
+function skrn() {
 	gr_FJL="~/.screen-lyt"
 	if [ $1 -eq 0 ] || [ $1 -eq 1 ] || [ $1 -eq 2 ] || [ $1 -eq 3 ]; then
 		gr_PRM=$1
@@ -91,7 +91,7 @@ skrn() {
 # added 20160621
 # mplayeri()  accepts unix path and converts it into windows path
 # mplayer must be softlinked to cygwin executable path!!
-mplyr() {
+function mplyr() {
 	# check if there is one and only on argument:
 	if [ $# -ne 1 ]; then
 		clear
@@ -110,31 +110,31 @@ mplyr() {
 
 # # added 20170804 - ydd() combines ydd and RSYNC-en
 #
-ydd() {
-	yes | ddbak && yes | ddlog
+function dd() {
+	yes | pddbak && yes | pddlog
 }
 
-pdd() {
+function pdd() {
 	pddbak && pddlog
 }
 
-yddr() {
-	yes | ddbak && yes | ddlog && RSYNC-BACKUP-en
+function yddr() {
+	yes | pddbak && yes | pddlog && RSYNC-BACKUP-en
 }
 
-pddr() {
+function pddr() {
 	pddbak && pddlog && RSYNC-BACKUP-en
 }
 
-sbr() {
+function sbr() {
 	clear && source ~/.bashrc
 }
 
-sbc() {
+function sbc() {
 	clear && source ~/.black_white_bashrc
 }
 
-tmxs() {
+function tmxs() {
 	# tmux -f ~/.mytmuxconf attach
 	tmux -f ~/.tmux_7_conf attach
 }
@@ -142,32 +142,32 @@ tmxs() {
 
 # 20141027 IFS value settings
 # set IFS to newline '\n'
-nifs() {
+function nifs() {
 	echo -n "setting IFS to newline ..." 
 	IFS=$'\n'
 	echo " done."
 }
 
 # set IFS to orginal ' \t\n'
-oifs() {
+function oifs() {
 	echo -n "setting IFS to original value ..."
 	IFS=$' \t\n'
 	echo " done."
 }
 
-gcs() {
+function gcs() {
 	gr_PTH=file://$(cygpath -w $PWD | sed 's:\\:/:g')
 	gr_FJL=$1
 	cygstart /c/Users/gregor.redelonghi/AppData/Local/Google/Chrome/Application/chrome.exe ${gr_PTH}/${gr_FJL}
 }
 
-ffs() {
+function ffs() {
 	gr_PTH=file://$(cygpath -w $PWD | sed 's:\\:/:g')
 	gr_FJL=$1
 	cygstart ${FF_en} ${gr_PTH}/${gr_FJL}
 }
 
-turl() {
+function turl() {
 	if [ -z "$URL" ]; then
 		echo "URL is empty"
 	else
@@ -178,18 +178,18 @@ turl() {
 
 # 20201012
 # neofetch start
-nf() {
+function nf() {
 	clear
 	neofetch
 }
 
 # screenfetch
-sf() {
+function sf() {
 	clear
 	screenfetch-dev
 }
 
-updtc() {
+function updtc() {
 	${HOME}/.local/bin/RUN-en-cdng && ${HOME}/.local/bin/drpbx-rclone-ODPRTO1-L-R
 }
 
@@ -197,24 +197,24 @@ updtc() {
 #	${HOME}/.local/bin/RUN-en-cdng && ${HOME}/.local/bin/meganz-rclone-ODPRTO1-L-R
 #	}
 
-updts() {
+function updts() {
 	${HOME}/.local/bin/RUN-en-cdng && ${HOME}/.local/bin/drpbx-rclone-sync-ODPRTO1-L-R
 }
 
-mupdts() {
+function mupdts() {
 	${HOME}/.local/bin/RUN-en-cdng && ${HOME}/.local/bin/meganz-rclone-sync-ODPRTO1-L-R
 }
 
-o24() {
+function o24() {
 	cygstart explorer /E, $(cygpath -w /c/users/gregor.redelonghi/${CURRYR})
 }
 
-pwf() {
+function pwf() {
 	t-gremdomov
 }
 
 # 20221213
-cless() {
+function cless() {
 	if [ $# != 1 ]; then
 		return
 	fi
@@ -222,32 +222,32 @@ cless() {
 	highlight -O  ansi $@ | less
 }
 
-cf() {
+function cf() {
 	cd $(ls -aF --group-directories-first | fzf --reverse)
 }
 
-pcs() {
+function pcs() {
 	cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/processing-4.2-windows-x64/processing-4.2/processing.exe
 }
 
-neww() {
+function neww() {
 	nohup /usr/bin/mintty -e /usr/bin/bash -c "~/majstaf_en/majbin_en/BrthReminder/BrthReminder_c_color.exe;cd;bash" 2>/dev/null
 }
 
 # 20240820
-hstl() {
+function hstl() {
 	gPth="$HOME/majstaf_en/seznami_en/history-en_$(date +'%Y%m%d-%H%M%S').txt"
 	history >> ${gPth}
 	echo "Sccesfully added commands from HISTORY to ${gPth}"
 }
 
-ure() {
+function ure() {
 	gr_GO1="https://ris.jhl.si/"
 	cygstart "$gr_MSE" ${gr_GO1}
 }
 
 
-switch_prompt() {
+function switch_prompt() {
 	choice=$(for FFF in ~/majstaf_en/majrcs_en/bashrc_prompt_*; do echo $(basename $FFF); done | fzf)
 	source ~/majstaf_en/majrcs_en/${choice}
 }
