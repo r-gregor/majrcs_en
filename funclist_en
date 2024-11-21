@@ -248,3 +248,11 @@ prompt_switch() {
 	source ~/majstaf_en/majrcs_en/${choice}
 }
 
+BrthReminder_c() {
+	~/.local/bin/BrthReminder_c2 "$@"
+}
+
+
+BrthReminder_c_color() {
+	~/.local/bin/BrthReminder_c_color2 "$@"
+}
