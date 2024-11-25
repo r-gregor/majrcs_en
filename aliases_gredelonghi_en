@@ -208,8 +208,8 @@ alias spdf='/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/SumatraPDF-3.3.3-6
 alias ccat='highlight -O ansi'
 
 # 20240412
-# alias bb='/home/gregor.redelonghi/majstaf_en/majbin_en/BrthReminder/BrthReminder_c'
-# alias bbc='/home/gregor.redelonghi/majstaf_en/majbin_en/BrthReminder/BrthReminder_c_color'
+alias bb='/home/gregor.redelonghi/majstaf_en/majbin_en/BrthReminder/BrthReminder_c'
+alias bbc='/home/gregor.redelonghi/majstaf_en/majbin_en/BrthReminder/BrthReminder_c_color'
 
 alias fzf='fzf --reverse'
 alias vimf='vim $(fzf --reverse)'
