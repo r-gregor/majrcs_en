@@ -65,7 +65,7 @@ prompt_left() {
 			fi
 		fi
 	else
-		echo -e "${orange_inv} \u@\h ${blue_inv} \w ${off}"
+		echo -e " ${orange_inv} \u@\h ${blue_inv} \w ${off}"
 	fi
 }
 
