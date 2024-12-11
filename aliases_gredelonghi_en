@@ -222,8 +222,9 @@ alias cargon='cargo new --vcs=none '
 alias vimb='vim -u $HOME/.dotvimrc_monochrome'
 
 # 20240212
-alias vimr='vim -M'
-alias vimm='vim -M'
+alias v='vim'
+alias vimr='v -M'
+alias vimm='v -M'
 
 # 20240227 -- preventc cd to write absolute path at change ...
 alias cd='>/dev/null cd'
