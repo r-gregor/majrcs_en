@@ -1,11 +1,11 @@
-# --------------------------------------------------------
-# ALIASES:
+# last updated 20241216
 
 unalias -a
 
-alias ggo='source /home/gregor.redelonghi/majstaf_en/l2_coding_en/gooo/gooo.sh'
-alias v='vim'
 
+###########################
+### list/view  commands ###
+###########################
 alias lss='\ls --group-directories-first --time-style=long-iso'
 alias l='lss --color=always'
 alias l1='l -1F'
@@ -19,150 +19,46 @@ alias lac='lss -AlF'
 alias lo='l -gotrF'
 alias lld='l -l --time-style=long-iso | grep ^d'
 alias lsd='l -d */'
+alias llh='ls -lAd --color ./.*'
+alias llg='llc -gG'
 alias cl='clear'
 alias cls='clear'
-alias cp='cp -n'
+alias tree='tree -C --charset ASCII --noreport --dirsfirst'
+alias show='find ~/.local/bin/ -type l | \grep "_" | xargs ls --color'
+alias showall='find ~/.local/bin/ -type l | xargs ls --color'
+alias show00='find ~/.local/bin/ -type l | \grep "_" | xargs ls -l | \grep 00 | cut -b61- | cut -d" " -f1'
+alias clm='column -c $(tput cols)'
+alias clmn='cat -n | column -c $(tput cols)'
+alias ctn='cat -n'
+alias wdf='watch -d -n1 df'
+alias wdfh='watch -d -n1 df -h'
+
+
+####################
+### grep command ###
+####################
 # alias grepc='GREP_COLOR="01;31" LANG=C grep --color=auto'
 # alias grepc='GREP_COLOR="mt=01;31" LANG=C grep --color=auto'
 alias grepc='GREP_COLOR="mt=01;31" LANG=C grep --color=always'
 
-alias xx='logout'
+
+#####################################
+### file/dir manipulations/access ###
+#####################################
+alias cd='>/dev/null cd' # prevent cd to write absolute path at change ...
 alias opnu='source /home/gregor.redelonghi/majstaf_en/majbin_en/opn/opnu'
 alias opnw='source /home/gregor.redelonghi/majstaf_en/majbin_en/opn/opnw'
-
-# --------------------------------------------------------
 alias godos='source /home/gregor.redelonghi/majstaf_en/l2_coding_en/gooo/godossrc.sh'
-
-# --------------------------------------------------------
-alias ydbak='yes | pddbak'
-alias ydlog='yes | pddlog'
-alias ydd='yes | pddbak && yes | pddlog'
-alias pozeni='source /home/gregor.redelonghi/majstaf_en/l2_coding_en/00_ukazi/run-oneliner.sh'
-
-# --------------------------------------------------------
+alias ggo='source /home/gregor.redelonghi/majstaf_en/l2_coding_en/gooo/gooo.sh'
 alias stt='stat -c "%A %a %n" '
 alias cp='cp -nv'
 alias mv='mv -nv'
 alias rm='rm -Iv'
 alias cpn='yes n | cp -iv'
-alias sbrn='clear && source ~/.bashrc_nonerd'
-alias sbrb='clear && source ~/.bashrc_base'
-alias vvm='vim ~/.vimrc'
-alias vbr='vim ~/.bashrc'
-alias vaf='vim /home/forallusers/aliases_forall'
-alias lys='/opt/lynis-1.3.0/lynis --check-all -Q'
-alias rmi='rm -vi'
-alias llh='ls -lAd --color ./.*'
-
-# --------------------------------------------------------
-# 20240508
-base_pth="$HOME/majstaf_en/engit/knowledgedb"
-alias dbot='cd ${base_pth}/_TXT'
-alias dbop='cd ${base_pth}/_PYTHON'
-alias dbor='cd ${base_pth}/_RUST'
-alias dboj='cd ${base_pth}/_JAVA'
-alias dbog='cd ${base_pth}/_GO'
-alias dboc='cd ${base_pth}/_C_and_Cpp'
-
-# --------------------------------------------------------
-# 20240130
-# moved to majbin script
-# alias hstl="history > $HOME/majstaf_en/seznami_en/history-en.dat_$(date +%Y%m%d-%H%M%S)"
-alias hstlp="history > $HOME/majstaf_en/seznami_en/history-en_$(date +%Y%m%d-%H%M%S).txt"
-
-ydl_cmd="/usr/local/bin/yt-dlp"
-alias ydlF="${ydl_cmd} -F"
-alias ydl="${ydl_cmd} -o '%(title)s_%(upload_date)s.%(ext)s'"
-alias sov='set -o vi'
-alias usov='set -o emacs'
-# --------------------------------------------------------
-alias llg='llc -gG'
-
-####
-# TURN LINE WRAPPING OFF
-alias wrapoff='printf "\033[?7l"'
-
-# TURN LINE WRAPPING ON
-alias wrapon='printf "\033[?7h"'
-
-# show IFS value [$' \t\n' -- space; $'\n' -- newline
-alias showifs='printf %q "$IFS"'
-
-# go to /c/Users/gregor.redelonghi ...
+alias up='upup'                 # added 20160421 -- new func in /home/forallusers/funclist -- upup
 alias cdg='export CDG=/c/Users/gregor.redelonghi; cd $CDG'
 alias cdf='export CDF=/home/forallusers; cd $CDF'
-##############################################################################alias cdr="source ~/majstaf_en/coding/cdr.sh"
-##############################################################################alias kateof='cat <<EOF | ~/majstaf_en/coding/send_mail/snd.mm.hm.sh'
-
-# added 20160421 -- new func in /home/forallusers/funclist -- upup
-alias up='upup'
-
-
-# added 20160516 -- screen layouts ...
-alias sl1='screen -X source ~/.screen-lyt-1' # 1-st H split, lower region V-split
-alias sl2='screen -X source ~/.screen-lyt-2' # 1-st V-split, right region H-split
-alias sl3='screen -X source ~/.screen-lyt-3' # 2x V-split, 2x H-split
-
-
-# ------------------------------------------------------------------------------
-alias w3md='/home/gregor.redelonghi/majstaf_en/majbin_en/w3mdump/w3mdump-webpage-to-file'
-
-# added 20161110 ---------------------------------------------------------------
-alias w3m_d='w3m -dump -cols 110'
-alias lynx_d='lynx -dump -width=110'
-
-# added 20161116 -- new python3 default --> some scripts to be called from python2:
-##############################################################################alias sndm-enpy='python2 ~/majstaf_en/coding/send_mail/sendmymail-en.py'
-
-##############################################################################alias colors='bash ~/majstaf_en/coding/colors_show_onl.sh'
-
-alias p3='/usr/bin/python3'
-
-# added 20171024
-# vim seznam.pnp --> create dir structure in 2017 folder
-##############################################################################alias vszn='vim ~/majstaf_en/coding/pnp/seznam.pnp'
-
-alias wdf='watch -d -n1 df'
-alias wdfh='watch -d -n1 df -h'
-alias ktmux='tmux kill-server'
-alias ktmx='tmux kill-server'
-alias tmux='tmux -2' # 256 colors terminal
-
-# added 20180509
-alias jv='/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/jdk-11/bin/java'
-alias jvc='/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/jdk-11/bin/javac'
-
-
 alias du1='du -h -d1 $PWD/* | sort -hr | less'
-
-# added 20180905
-# moved 20210928 to majbin_en script
-# alias duh='du -sh --total ./* | sort -hr'
-
-# added 20181127
-alias acr='cygstart /c/Program\ Files\ \(x86\)/Adobe/Acrobat\ Reader\ DC/Reader/AcroRd32.exe'
-
-alias jptr='jupyter notebook --no-browser'
-
-# added 20190227: starting python 3 simple http server on port 8080 --> browser URL: localhost:8080
-alias ptnhttp='python3 -m http.server 8080'
-
-
-# added 20190327
-alias sortl1='ls -ltF --time-style="+%Y%m%d %H-%M-%S" | cut -b 51- | sort -n'
-
-# added 20191014
-alias tree='tree -C --charset ASCII --noreport --dirsfirst'
-
-alias intelij="cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/ideaIC-2021.1.1.win/bin/idea64.exe"
-alias Idea="cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/ideaIC-2021.1.1.win/bin/idea64.exe"
-
-# node.js start
-NODE=node-v14.17.5-win-x64
-# alias node="cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs/${NODE}/node.exe"
-alias node="/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/${NODE}/node.exe"
-
-# added 20200820
 alias ..='cd ../'
 alias ...='cd ../../'
 alias .3='cd ../../../'
@@ -170,74 +66,161 @@ alias .4='cd ../../../../'
 alias .5='cd ../../../../../'
 alias l.='ls -a | egrep "^\."'
 alias -- -='cd -'
+alias sortl1='ls -ltF --time-style="+%Y%m%d %H-%M-%S" | cut -b 51- | sort -n'
 
-alias show='find /usr/local/bin/ -type l | \grep "_" | xargs ls --color'
-alias showall='find /usr/local/bin/ -type l | xargs ls --color'
-alias show00='find /usr/local/bin/ -type l | \grep "_" | xargs ls -l | \grep 00 | cut -b61- | cut -d" " -f1'
 
-# added 20200928
+#######################
+### custom commands ###
+#######################
+alias ydbak='yes | pddbak'
+alias ydlog='yes | pddlog'
+alias ydd='yes | pddbak && yes | pddlog'
+alias pozeni='source /home/gregor.redelonghi/majstaf_en/l2_coding_en/00_ukazi/run-oneliner.sh'
+alias lys='/opt/lynis-1.3.0/lynis --check-all -Q'
+alias w3md='/home/gregor.redelonghi/majstaf_en/majbin_en/w3mdump/w3mdump-webpage-to-file'
+alias w3m_d='w3m -dump -cols 110'
+alias lynx_d='lynx -dump -width=110'
+alias bb='/home/gregor.redelonghi/majstaf_en/majbin_en/BrthReminder/BrthReminder_c'
+alias bbc='/home/gregor.redelonghi/majstaf_en/majbin_en/BrthReminder/BrthReminder_c_color'
+
+
+###################
+### knowledgedb ###
+###################
+base_pth="$HOME/majstaf_en/engit/knowledgedb"
+alias dbot='cd ${base_pth}/_TXT'
+alias dbop='cd ${base_pth}/_PYTHON'
+alias dbor='cd ${base_pth}/_RUST'
+alias dbog='cd ${base_pth}/_GO'
+alias dboc='cd ${base_pth}/_C_and_Cpp'
+
+
+###############
+### history ###
+###############
+# hstl: moved to majbin script
+alias hstlp="history > $HOME/majstaf_en/seznami_en/history-en_$(date +%Y%m%d-%H%M%S).txt"
+
+
+###########################
+### yt-dlp / youtube-dl ###
+###########################
+ydl_cmd="/usr/local/bin/yt-dlp"
+alias ydlF="${ydl_cmd} -F"
+alias ydl="${ydl_cmd} -o '%(title)s_%(upload_date)s.%(ext)s'"
+
+
+#########################
+### terminal settings ###
+#########################
+alias wrapoff='printf "\033[?7l"'    # TURN LINE WRAPPING OFF
+alias wrapon='printf "\033[?7h"'     # TURN LINE WRAPPING ON
+alias showifs='printf %q "$IFS"'     # SHOW IFS
+
+
+######################
+### screen command ###
+######################
+alias sl1='screen -X source ~/.screen-lyt-1' # 1-st H split, lower region V-split
+alias sl2='screen -X source ~/.screen-lyt-2' # 1-st V-split, right region H-split
+alias sl3='screen -X source ~/.screen-lyt-3' # 2x V-split, 2x H-split
+
+
+#######################
+### python commands ###
+#######################
+alias p3='/usr/bin/python3'
+alias ptnhttp='python3 -m http.server 8080'
+alias jptr='jupyter notebook --no-browser'
+
+
+####################
+### tmux command ###
+####################
+alias ktmux='tmux kill-server'
+alias ktmx='tmux kill-server'
+alias tmux='tmux -2'            # 256 colors terminal
+
+
+##################
+### UNASSIGNED ###
+##################
+alias acr='cygstart /c/Program\ Files\ \(x86\)/Adobe/Acrobat\ Reader\ DC/Reader/AcroRd32.exe'
+alias intelij="cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/ideaIC-2021.1.1.win/bin/idea64.exe"
+alias Idea="cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/ideaIC-2021.1.1.win/bin/idea64.exe"
+alias ccat='highlight -O ansi'
+
+
+########################
+### node.js commands ###
+########################
+# alias node="cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs/${NODE}/node.exe"
+NODE=node-v14.17.5-win-x64
+alias node="/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/${NODE}/node.exe"
+
+
+######################
+### ranger command ###
+######################
 # neded to update: python3 -m pip install ranger-fm
 # sorce! --> so it changes to curently selected directory on quit!!
 alias r='source ranger'
+# alias r='/usr/local/bin/ranger'
 
-alias rclone='/usr/local/bin/rclone -v'
 
-# 2022
-#
+####################
+### git commands ###
+####################
 alias nvol='/usr/bin/git --git-dir=/home/gregor.redelonghi/majstaf_en/engit/vlpprs_en --work-tree=/c/Users/gregor.redelonghi/majstaf_en/en_staf/majvolpejprs'
 alias gst='/usr/bin/git status'
-alias vimn='vim -Nu NORC '
 # alias py='/usr/bin/python3'
 # alias node='/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/node-v14.17.5-win-x64/node.exe'
 alias py3='/c/Users/gregor.redelonghi/AppData/Local/Programs/Python/Python39/python.exe'
 
-alias clm='column -c $(tput cols)'
-alias clmn='cat -n | column -c $(tput cols)'
-alias ctn='cat -n'
-alias r='/usr/local/bin/ranger'
+
+####################
+### java aliases ###
+####################
 alias pdfjoin='java -jar $(cygpath -w "/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/pdftk-all.jar") '
+alias dboj='cd ${base_pth}/_JAVA'
+alias jv='/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/jdk-11/bin/java'
+alias jvc='/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/jdk-11/bin/javac'
 
-alias rsync-singlef='rsync -rltD --update --progress'
-# alias wgcc='x86_64-w64-mingw32-gcc.exe'
-alias wgcc='x86_64-w64-mingw32-gcc-11.1.0.exe'
 
-# 20221130
-alias spdf='/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/SumatraPDF-3.3.3-64/SumatraPDF-3.3.3-64.exe'
-
-# 20221213
-alias ccat='highlight -O ansi'
-
-# 20240412
-alias bb='/home/gregor.redelonghi/majstaf_en/majbin_en/BrthReminder/BrthReminder_c'
-alias bbc='/home/gregor.redelonghi/majstaf_en/majbin_en/BrthReminder/BrthReminder_c_color'
-
-alias fzf='fzf --reverse'
-alias vimf='vim $(fzf --reverse)'
-alias lessf='less $(fzf --reverse)'
-
-# 20230802
+######################
+### system aliases ###
+######################
 alias cargon='cargo new --vcs=none '
+alias spdf='/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/SumatraPDF-3.3.3-64/SumatraPDF-3.3.3-64.exe'
+alias wgcc='x86_64-w64-mingw32-gcc-11.1.0.exe'
+alias rsync-singlef='rsync -rltD --update --progress'
+alias sov='set -o vi'
+alias usov='set -o emacs'
+alias xx='logout'
+alias rclone='/usr/local/bin/rclone -v'
 
-# 20240207
-alias vimb='vim -u $HOME/.dotvimrc_monochrome'
 
-# 20240212
+###################
+### fzf aliases ###
+###################
+alias fzf='fzf --reverse'
+alias vf='vim $(fzf --reverse)'
+alias lsf='less $(fzf --reverse)'
+
+
+###################
+### vim command ###
+###################
 alias v='vim'
-alias vimr='v -M'
-alias vimm='v -M'
-
-# 20240227 -- preventc cd to write absolute path at change ...
-alias cd='>/dev/null cd'
-
-# 20240821 -- pipe list of files to 'uimp' to open them
-#             readonly as separate tabs in vim
-alias uimp=' xargs -ro vim -Mp'
-#
-# 20240824
-alias fzvm='fzf | xargs -ro vim'
-alias fzvmr='fzf | xargs -ro vim -M'
-
-# 20240826
-# -m witch to select multiple lines with tab/shift+tab
- alias fzvmp='fzf -m | xargs -ro vim -p'
+alias vro='v -M'                                               # readonly
+alias vm='v -M'                                                # readonly
+alias vb='vim -u $HOME/.dotvimrc_monochrome'                   #
+alias fzv='fzf | xargs -ro vim'                                # fzf single select
+alias fzvr='fzf | xargs -ro vim -M'                            # fzf single select readonly
+alias vp=' xargs -ro vim -Mp'                                  # open in separate tabs redaonly
+alias fzvp='fzf -m | xargs -ro vim -p'                         # fzf multiple open in separate tabs
+alias ve='find -type f | grep -v '.git' | fzf | xargs -ro vim' # fzf single search inside repo
+alias vvr='vim ~/.vimrc'
+alias vbr='vim ~/.bashrc'
+alias vimn='vim -Nu NORC '
 
