@@ -132,6 +132,7 @@ alias sl3='screen -X source ~/.screen-lyt-3' # 2x V-split, 2x H-split
 alias p3='/usr/bin/python3'
 alias ptnhttp='python3 -m http.server 8080'
 alias jptr='jupyter notebook --no-browser'
+alias py3='/c/Users/gregor.redelonghi/AppData/Local/Programs/Python/Python39/python.exe'
 
 
 ####################
@@ -171,11 +172,10 @@ alias r='source ranger'
 ####################
 ### git commands ###
 ####################
-alias nvol='/usr/bin/git --git-dir=/home/gregor.redelonghi/majstaf_en/engit/vlpprs_en --work-tree=/c/Users/gregor.redelonghi/majstaf_en/en_staf/majvolpejprs'
+NVOL_GDIR='/home/gregor.redelonghi/majstaf_en/engit/vlpprs_en'
+NVOL_WTREE='/c/Users/gregor.redelonghi/majstaf_en/en_staf/majvolpejprs'
+alias nvol="/usr/bin/git --git-dir=${NVOL_GDIR} --work-tree=${NVOL_WTREE}"
 alias gst='/usr/bin/git status'
-# alias py='/usr/bin/python3'
-# alias node='/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/node-v14.17.5-win-x64/node.exe'
-alias py3='/c/Users/gregor.redelonghi/AppData/Local/Programs/Python/Python39/python.exe'
 
 
 ####################
@@ -195,7 +195,7 @@ alias spdf='/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/SumatraPDF-3.3.3-6
 alias wgcc='x86_64-w64-mingw32-gcc-11.1.0.exe'
 alias rsync-singlef='rsync -rltD --update --progress'
 alias sov='set -o vi'
-alias usov='set -o emacs'
+alias soe='set -o emacs'
 alias xx='logout'
 alias rclone='/usr/local/bin/rclone -v'
 
