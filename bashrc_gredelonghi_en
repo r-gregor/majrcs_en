@@ -18,7 +18,7 @@ NODEJS="node-v14.17.5-win-x64"
 #############################
 # EXPORTs
 #############################
-export CURRENT_YEAR_ENV=2024
+export CURRENT_YEAR_ENV=2025
 
 # 20230511
 export LESS="-QR -x4 -Xr"
