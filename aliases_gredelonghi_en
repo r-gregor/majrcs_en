@@ -223,4 +223,5 @@ alias ve='find -type f | grep -v '.git' | fzf | xargs -ro vim' # fzf single sear
 alias vvr='vim ~/.vimrc'
 alias vbr='vim ~/.bashrc'
 alias vimn='vim -Nu NORC '
+alias vimr='vim -M'
 
