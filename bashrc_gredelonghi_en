@@ -40,7 +40,7 @@ export cugr='/c/Users/gregor.redelonghi'
 
 export JAVA_HOME="C:\Users\gregor.redelonghi\majstaf_en\majprogs_en\jdk-11"
 export PATH="$(cygpath -u ${JAVA_HOME})/bin:$PATH"
-export PATH="$PATH:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/zig-windows-x86_64-0.11.0-dev.1817+f6c934677/"
+export PATH="$PATH:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/zig-windows-x86_64-0.14.0"
 export PATH="$PATH:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/.cargo/bin"
 export PATH_TO_FX="C:\Users\gregor.redelonghi\majstaf_en\majprogs_en\javafx-sdk-11.0.2\lib"
 export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/${NODEJS}"
