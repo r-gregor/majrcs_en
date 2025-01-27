@@ -418,3 +418,12 @@ cbs() {
 	 cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/CodeBlocks/codeblocks.exe
 }
 
+envvarset() {
+	 cygstart rundll32.exe sysdm.cpl,EditEnvironmentVariables
+}
+
+spremokolj() {
+	 cygstart rundll32.exe sysdm.cpl,EditEnvironmentVariables
+}
+
+
