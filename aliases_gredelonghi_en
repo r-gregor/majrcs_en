@@ -105,9 +105,10 @@ alias hstlp="history > $HOME/majstaf_en/seznami_en/history-en_$(date +%Y%m%d-%H%
 ###########################
 ### yt-dlp / youtube-dl ###
 ###########################
-ydl_cmd="/usr/local/bin/yt-dlp"
+ydl_cmd="/usr/local/bin/yt-dlp --proxy http://10.91.8.21:80"
 alias ydlF="${ydl_cmd} -F"
 alias ydl="${ydl_cmd} -o '%(title)s_%(upload_date)s.%(ext)s'"
+alias ydlA="${ydl_cmd} -x --audio-format mp3"
 
 
 #########################
