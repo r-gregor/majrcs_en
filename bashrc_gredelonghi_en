@@ -110,4 +110,5 @@ export MPRG="${MAJSTAFEN}/majprogs_en"
 export MSZN="${MAJSTAFEN}/seznami_en"
 export MSPRT="${MAJSTAFEN}/support"
 # ---
+export PRXY='http://10.91.8.21:80'
 
