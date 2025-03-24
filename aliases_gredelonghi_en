@@ -67,6 +67,7 @@ alias .5='cd ../../../../../'
 alias l.='ls -a | egrep "^\."'
 alias -- -='cd -'
 alias sortl1='ls -ltF --time-style="+%Y%m%d %H-%M-%S" | cut -b 51- | sort -n'
+alias gh="cd ${HOME}/majstaf_en"
 
 
 #######################
@@ -207,7 +208,10 @@ alias rclone='/usr/local/bin/rclone -v'
 alias fzf='fzf --reverse'
 alias vf='vim $(fzf --reverse)'
 alias lsf='less $(fzf --reverse)'
-
+alias fvm='fzf --reverse | xargs -ro vim'
+alias fvmr='fzf --reverse | xargs -ro vim -M'
+alias fvmp='fzf -m --reverse | xargs -ro vim -p'
+alias run='ls ~/majstaf/majbin/ | fzf --reverse | bash - '
 
 ###################
 ### vim command ###
@@ -216,10 +220,7 @@ alias v='vim'
 alias vro='v -M'                                               # readonly
 alias vm='v -M'                                                # readonly
 alias vb='vim -u $HOME/.dotvimrc_monochrome'                   #
-alias fzv='fzf | xargs -ro vim'                                # fzf single select
-alias fzvr='fzf | xargs -ro vim -M'                            # fzf single select readonly
 alias vp=' xargs -ro vim -Mp'                                  # open in separate tabs redaonly
-alias fzvp='fzf -m | xargs -ro vim -p'                         # fzf multiple open in separate tabs
 alias ve='find -type f | grep -v '.git' | fzf | xargs -ro vim' # fzf single search inside repo
 alias vvr='vim ~/.vimrc'
 alias vbr='vim ~/.bashrc'

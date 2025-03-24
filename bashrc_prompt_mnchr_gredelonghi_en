@@ -39,7 +39,7 @@ prompt_left() {
 
 # 20241014
 prompt_next() {
-	echo -e  "$>"
+	echo -e  "$> "
 }
 
 # 20241014
