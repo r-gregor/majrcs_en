@@ -235,12 +235,12 @@ pcs() {
 }
 
 neww() {
-	nohup /usr/bin/mintty -e /usr/bin/bash -c "~/majstaf_en/majbin_en/BrthReminder/BrthReminder_c_colors.exe;cd;bash" 2>/dev/null
+	nohup /usr/bin/mintty -e /usr/bin/bash -c "~/majstaf/majbin/BrthReminder/BrthReminder-c-color.exe;cd;bash" 2>/dev/null
 }
 
 # 20240820
 hstl() {
-	gPth="$HOME/majstaf_en/seznami_en/history-en_$(date +'%Y%m%d-%H%M%S').txt"
+	gPth="$HOME/majstaf/seznami/history-en_$(date +'%Y%m%d-%H%M%S').txt"
 	history >> ${gPth}
 	echo "Sccesfully added commands from HISTORY to ${gPth}"
 }
@@ -251,9 +251,13 @@ ure() {
 }
 
 
-prompt_switch() {
-	choice=$(for FFF in ~/majstaf_en/majrcs_en/bashrc_prompt_*; do echo $(basename $FFF); done | fzf)
-	source ~/majstaf_en/majrcs_en/${choice}
+prompt-switch() {
+	choice=$(for FFF in ~/majstaf/majrcs/bashrc-prompt-*; do echo $(basename $FFF); done | fzf)
+	source ~/majstaf/majrcs/${choice}
+}
+
+prs() {
+	prompt_switch
 }
 
 BrthReminder_c() {
@@ -261,8 +265,8 @@ BrthReminder_c() {
 }
 
 
-BrthReminder_c_colors() {
-	~/.local/bin/BrthReminder_c_colors2 "$@"
+BrthReminder-c-colors() {
+	~/.local/bin/BrthReminder-c-colors2 "$@"
 }
 
 ### from startfuncs_en
@@ -386,13 +390,6 @@ tgd() {
 vgd() {
 # --> vgd	start v_gremdomov
     v_gremdomov
-}
-
-fncs() {
-# --> fncs	functions list in startfuncs_en
-    gr_fjl="/home/gregor.redelonghi/majstaf_en/majrcs_en/startfuncs_en"
-    grep "br
-	# --> " ${gr_fjl} | sed 's/# --> //' | sed '$ d'
 }
 
 # start quickstart and tmux [20190326]

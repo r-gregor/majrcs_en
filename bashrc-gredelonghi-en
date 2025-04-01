@@ -52,7 +52,6 @@ export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/dmd.2.093
 export GOROOT='C:\Users\gregor.redelonghi\majstaf_en\majprogs_en\go1.23.0.windows-amd64\go'
 export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/go1.23.0.windows-amd64/go/bin"
 export TOTT=0
-# export CDPATH='.:~/majstaf_en:~/majstaf_en/coding2/testing:~/majstaf_en/en_git:/c/Users/gregor.redelonghi/majstaf_en/drpbx-en'
 export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/c3-windows-Release"
 
 
@@ -78,11 +77,11 @@ explain () {
 export C_UGR="/c/Users/gregor.redelonghi"
 export C_UGRMS="${C_UGR}/majstaf_en"
 export GRDLNGH="${C_UGR}"
-export MAJSTAFEN="/home/gregor.redelonghi/majstaf_en"
+export MAJSTAFEN="/home/gregor.redelonghi/majstaf"
 export EGT="${MAJSTAFEN}/engit"
 export DOWNLOADS="${C_UGR}/Downloads"
 export BRISI="${C_UGRMS}/BRISI"
-export SCRPTS="${MAJSTAFEN}/scripts_majbin_en"
+export SCRPTS="${MAJSTAFEN}/majscripts"
 export SPPRT="${MAJSTAFEN}/support"
 export DANES="${MAJSTAFEN}/_NERAZPOREJENO/__DANES__"
 export EMBIN="${EGT}/majbin_en"
@@ -102,12 +101,12 @@ export ZTST="${TESTINGEN}/zig_testing"
 export NTST="${TESTINGEN}/ncurses_testing"
 export RTST="${TESTINGEN}/rust_testing"
 
-export MBIN="${MAJSTAFEN}/majbin_en"
-export MRCS="${MAJSTAFEN}/majrcs_en"
-export MSYS="${MAJSTAFEN}/metsys_en"
-export MCFG="${MAJSTAFEN}/majconfig_en"
-export MPRG="${MAJSTAFEN}/majprogs_en"
-export MSZN="${MAJSTAFEN}/seznami_en"
+export MBIN="${MAJSTAFEN}/majbin"
+export MRCS="${MAJSTAFEN}/majrcs"
+export MSYS="${MAJSTAFEN}/metsys"
+export MCFG="${MAJSTAFEN}/majconfig"
+export MPRG="${MAJSTAFEN}/majprogs"
+export MSZN="${MAJSTAFEN}/seznami"
 export MSPRT="${MAJSTAFEN}/support"
 # ---
 export PRXY='http://10.91.8.21:80'

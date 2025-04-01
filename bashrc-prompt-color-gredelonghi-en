@@ -71,7 +71,7 @@ prompt_left() {
 
 # 20241014
 prompt_next() {
-# check: symbols and prompts_20240214.txt in ~/majstaf_en/metsys_en/
+# check: symbols and prompts_20240214.txt in ~/majstafn/metsys/
 # export PS1=$'\n\[\e[01;38;5;75m\][\h] \w\n$(parse_git_branch)\[\e[1;31m\]\u21AA \[\e[0m\] '
 # '⧽'  27E9
 # '↪ ' 21AA
