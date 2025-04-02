@@ -52,6 +52,7 @@ alias godos='source /home/gregor.redelonghi/majstaf/l2_coding_en/gooo/godossrc.s
 alias ggo='source /home/gregor.redelonghi/majstaf/l2_coding_en/gooo/gooo.sh'
 alias stt='stat -c "%A %a %n" '
 alias cp='cp -nv'
+alias cpi='cp -i'
 alias mv='mv -nv'
 alias rm='rm -Iv'
 alias cpn='yes n | cp -iv'

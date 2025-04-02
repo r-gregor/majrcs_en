@@ -257,7 +257,7 @@ prompt-switch() {
 }
 
 prs() {
-	prompt_switch
+	prompt-switch
 }
 
 BrthReminder_c() {
