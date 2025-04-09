@@ -252,7 +252,7 @@ ure() {
 
 
 prompt-switch() {
-	choice=$(for FFF in ~/majstaf/majrcs/bashrc-prompt-*; do echo $(basename $FFF); done | fzf)
+	choice=$(for FFF in ~/majstaf/majrcs/bashrc-prompt-*; do echo $(basename $FFF); done | fzf -e)
 	source ~/majstaf/majrcs/${choice}
 }
 
