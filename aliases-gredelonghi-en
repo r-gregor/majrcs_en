@@ -213,6 +213,7 @@ alias fvm='fzf --reverse | xargs -ro vim'
 alias fvmr='fzf --reverse | xargs -ro vim -M'
 alias fvmp='fzf -m --reverse | xargs -ro vim -p'
 alias run='ls ~/majstaf/majbin/ | fzf --reverse | bash - '
+alias fzf_aliases='grep fzf $MRCS/aliases-gredelonghi-en'
 
 ###################
 ### vim command ###
@@ -227,4 +228,5 @@ alias vvr='vim ~/.vimrc'
 alias vbr='vim ~/.bashrc'
 alias vimn='vim -Nu NORC '
 alias vimr='vim -M'
+alias vim_aliases='grep vim $MRCS/aliases-gredelonghi-en'
 
