@@ -23,6 +23,7 @@ alias llh='ls -lAd --color ./.*'
 alias llg='llc -gG'
 alias cl='clear'
 alias cls='clear'
+alias grepc='GREP_COLOR="mt=01;31" LANG=C grep --color=always'
 alias tree='tree -C --charset ASCII --noreport --dirsfirst'
 alias show='find ~/.local/bin/ -type l | \grep "_" | xargs ls --color'
 alias showall='find ~/.local/bin/ -type l | xargs ls --color'
@@ -32,15 +33,6 @@ alias clmn='cat -n | column -c $(tput cols)'
 alias ctn='cat -n'
 alias wdf='watch -d -n1 df'
 alias wdfh='watch -d -n1 df -h'
-
-
-####################
-### grep command ###
-####################
-# alias grepc='GREP_COLOR="01;31" LANG=C grep --color=auto'
-# alias grepc='GREP_COLOR="mt=01;31" LANG=C grep --color=auto'
-alias grepc='GREP_COLOR="mt=01;31" LANG=C grep --color=always'
-
 
 #####################################
 ### file/dir manipulations/access ###
@@ -141,9 +133,9 @@ alias py3='/c/Users/gregor.redelonghi/AppData/Local/Programs/Python/Python39/pyt
 ####################
 ### tmux command ###
 ####################
-alias ktmux='tmux kill-server'
-alias ktmx='tmux kill-server'
-alias tmux='tmux -2'            # 256 colors terminal
+# alias ktmux='tmux kill-server'
+# alias ktmx='tmux kill-server'
+# alias tmux='tmux -2'            # 256 colors terminal
 
 
 ##################
@@ -212,7 +204,7 @@ alias lsf='less $(fzf --reverse)'
 alias fvm='fzf --reverse | xargs -ro vim'
 alias fvmr='fzf --reverse | xargs -ro vim -M'
 alias fvmp='fzf -m --reverse | xargs -ro vim -p'
-alias run='ls ~/majstaf/majbin/ | fzf --reverse | bash - '
+alias run='find ~/majstaf/majbin/ -type f -executable | fzf --reverse | bash - '
 alias fzf_aliases='grep fzf $MRCS/aliases-gredelonghi-en'
 
 ###################
