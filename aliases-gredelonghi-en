@@ -200,10 +200,15 @@ alias rclone='/usr/local/bin/rclone -v'
 ###################
 alias lss-fzf='less $(fzf --reverse)'
 alias edit-sfjl-fzf='fzf --reverse | xargs -ro vim'
+alias edit-sfjl-efzf='fzf --reverse -e | xargs -ro vim'
 alias edit-mfjl-fzf='fzf -m --reverse | xargs -ro vim -p'
+alias edit-mfjl-efzf='fzf -m --reverse -e | xargs -ro vim -p'
 alias view-sfjl-fzf='fzf --reverse | xargs -ro vim -M'
+alias view-sfjl-efzf='fzf --reverse -e | xargs -ro vim -M'
 alias view-mfjl-fzf='fzf -m --reverse | xargs -ro vim -Mp'
+alias view-mfjl-efzf='fzf -m --reverse -e | xargs -ro vim -Mp'
 alias run='find ~/majstaf/majbin/ -type f -executable | fzf --reverse | bash - '
+alias run-efzf='find ~/majstaf/majbin/ -type f -executable | fzf --reverse -e | bash - '
 
 ###################
 ### vim command ###
