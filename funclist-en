@@ -260,8 +260,8 @@ prs() {
 	prompt-switch
 }
 
-BrthReminder_c() {
-	~/.local/bin/BrthReminder_c2 "$@"
+BrthReminder-c() {
+	~/.local/bin/BrthReminder-c2 "$@"
 }
 
 
@@ -307,9 +307,9 @@ npp() {
     # source ~/bin/00_ukazi/np.sh
 }
 
-w24() {
-# --> w24	start explorer /c/Users/gregor.redelonghi/2024
-    cygstart explorer /E,"c:\Users\gregor.redelonghi\2024"
+w25() {
+# --> w24	start explorer /c/Users/gregor.redelonghi/2025
+    cygstart explorer /E,"c:\Users\gregor.redelonghi\2025"
 }
 
 wh() {
@@ -337,12 +337,12 @@ ure() {
 	cygstart "$gr_MSE" ${gr_GO1}
 }
 
-r_ue() {
+r-ue() {
 # --> r_ue	start ris: uporabniški vmesnik
  cygstart "$gr_MSE" http://ris.jhl.si
 }
 
-r_po() {
+r-po() {
 # --> r_po	start ris: planiranje odsotnosti
     gr_GO2="http://ris-jhl01.jhl.si/prodms/dbris/RIS4I_MAIN_4612?p_kateri=ris4i_dopusti"
     cygstart "$gr_MSE" ${gr_GO2}
@@ -399,13 +399,13 @@ qtm() {
 	zze
 }
 
-cdpg_to_utf8() {
+cdpg-to-utf8() {
     # set system codepage from 852 (latin II) to 65001 (utf-8)
     cmd /c chcp 65001 &> /dev/null
 }
 
 
-cdpg_to_latin2() {
+cdpg-to-latin2() {
     # set system codepage 65001 (utf-8) to 852 (latin II)
     cmd /c chcp 852 &> /dev/null
 }
@@ -428,7 +428,7 @@ ncd() {
 	 cd $(find "$@" -type d \( -name ".git" -o -name ".cache" \) -prune -o -name "*" 2>/dev/null |fzf -e --reverse)
 }
 
-check_all_git_diffs() {
+check-all-git-diffs() {
 	for DDD in majbin majrcs metsys; do check-git-diffs-en $DDD; done
 }
 

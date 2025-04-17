@@ -198,27 +198,21 @@ alias rclone='/usr/local/bin/rclone -v'
 ###################
 ### fzf aliases ###
 ###################
-alias fzf='fzf --reverse'
-alias vf='vim $(fzf --reverse)'
-alias lsf='less $(fzf --reverse)'
-alias fvm='fzf --reverse | xargs -ro vim'
-alias fvmr='fzf --reverse | xargs -ro vim -M'
-alias fvmp='fzf -m --reverse | xargs -ro vim -p'
+alias lss-fzf='less $(fzf --reverse)'
+alias edit-sfjl-fzf='fzf --reverse | xargs -ro vim'
+alias edit-mfjl-fzf='fzf -m --reverse | xargs -ro vim -p'
+alias view-sfjl-fzf='fzf --reverse | xargs -ro vim -M'
+alias view-mfjl-fzf='fzf -m --reverse | xargs -ro vim -Mp'
 alias run='find ~/majstaf/majbin/ -type f -executable | fzf --reverse | bash - '
-alias fzf_aliases='grep fzf $MRCS/aliases-gredelonghi-en'
 
 ###################
 ### vim command ###
 ###################
 alias v='vim'
-alias vro='v -M'                                               # readonly
-alias vm='v -M'                                                # readonly
-alias vb='vim -u $HOME/.dotvimrc_monochrome'                   #
-alias vp=' xargs -ro vim -Mp'                                  # open in separate tabs redaonly
-alias ve='find -type f | grep -v '.git' | fzf | xargs -ro vim' # fzf single search inside repo
-alias vvr='vim ~/.vimrc'
-alias vbr='vim ~/.bashrc'
+alias v-ro='vim -M'                                                         # readonly
+alias v-mfjl-ro=' xargs -ro vim -Mp'                                        # open in separate tabs redaonly
+alias v-sfjl-git-repo='find -type f | grep -v '.git' | fzf | xargs -ro vim' # fzf single search inside repo
+alias v-vrc='vim ~/.vimrc'
+alias v-brc='vim ~/.bashrc'
 alias vimn='vim -Nu NORC '
-alias vimr='vim -M'
-alias vim_aliases='grep vim $MRCS/aliases-gredelonghi-en'
 
