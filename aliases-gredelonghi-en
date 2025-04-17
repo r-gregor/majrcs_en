@@ -199,14 +199,14 @@ alias rclone='/usr/local/bin/rclone -v'
 ### fzf aliases ###
 ###################
 alias lss-fzf='less $(fzf --reverse)'
-alias edit-sfjl-fzf='fzf --reverse | xargs -ro vim'
-alias edit-sfjl-efzf='fzf --reverse -e | xargs -ro vim'
-alias edit-mfjl-fzf='fzf -m --reverse | xargs -ro vim -p'
-alias edit-mfjl-efzf='fzf -m --reverse -e | xargs -ro vim -p'
-alias view-sfjl-fzf='fzf --reverse | xargs -ro vim -M'
-alias view-sfjl-efzf='fzf --reverse -e | xargs -ro vim -M'
-alias view-mfjl-fzf='fzf -m --reverse | xargs -ro vim -Mp'
-alias view-mfjl-efzf='fzf -m --reverse -e | xargs -ro vim -Mp'
+alias vedit-sfjl-fzf='fzf --reverse | xargs -ro vim'
+alias vedit-sfjl-efzf='fzf --reverse -e | xargs -ro vim'
+alias vedit-mfjl-fzf='fzf -m --reverse | xargs -ro vim -p'
+alias vedit-mfjl-efzf='fzf -m --reverse -e | xargs -ro vim -p'
+alias vview-sfjl-fzf='fzf --reverse | xargs -ro vim -M'
+alias vview-sfjl-efzf='fzf --reverse -e | xargs -ro vim -M'
+alias vview-mfjl-fzf='fzf -m --reverse | xargs -ro vim -Mp'
+alias vview-mfjl-efzf='fzf -m --reverse -e | xargs -ro vim -Mp'
 alias run='find ~/majstaf/majbin/ -type f -executable | fzf --reverse | bash - '
 alias run-efzf='find ~/majstaf/majbin/ -type f -executable | fzf --reverse -e | bash - '
 
@@ -215,6 +215,7 @@ alias run-efzf='find ~/majstaf/majbin/ -type f -executable | fzf --reverse -e | 
 ###################
 alias v='vim'
 alias v-ro='vim -M'                                                         # readonly
+alias v-mfjl=' xargs -ro vim -p'                                        # open in separate tabs redaonly
 alias v-mfjl-ro=' xargs -ro vim -Mp'                                        # open in separate tabs redaonly
 alias v-sfjl-git-repo='find -type f | grep -v '.git' | fzf | xargs -ro vim' # fzf single search inside repo
 alias v-vrc='vim ~/.vimrc'
