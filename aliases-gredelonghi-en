@@ -215,7 +215,7 @@ alias run-efzf='find ~/majstaf/majbin/ -type f -executable | fzf --reverse -e | 
 ###################
 alias v='vim'
 alias v-ro='vim -M'                                                         # readonly
-alias v-mfjl=' xargs -ro vim -p'                                        # open in separate tabs redaonly
+alias v-mfjl=' xargs -ro vim -p'                                            # open in separate tabs
 alias v-mfjl-ro=' xargs -ro vim -Mp'                                        # open in separate tabs redaonly
 alias v-sfjl-git-repo='find -type f | grep -v '.git' | fzf | xargs -ro vim' # fzf single search inside repo
 alias v-vrc='vim ~/.vimrc'
