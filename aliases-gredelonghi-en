@@ -93,7 +93,7 @@ alias dboc='cd ${base_pth}/_C_and_Cpp'
 ### history ###
 ###############
 # hstl: moved to majbin script
-alias hstlp="history > $HOME/majstaf/seznami_en/history-en_$(date +%Y%m%d-%H%M%S).txt"
+alias hstlp="history > $HOME/majstaf/seznami_en/history-en-$(date +%Y%m%d-%H%M%S).txt"
 
 
 ###########################

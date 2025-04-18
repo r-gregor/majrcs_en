@@ -240,7 +240,7 @@ neww() {
 
 # 20240820
 hstl() {
-	gPth="$HOME/majstaf/seznami/history-en_$(date +'%Y%m%d-%H%M%S').txt"
+	gPth="$HOME/majstaf/seznami/hstl-en-$(date +'%Y%m%d-%H%M%S').txt"
 	history >> ${gPth}
 	echo "Sccesfully added commands from HISTORY to ${gPth}"
 }
