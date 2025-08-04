@@ -143,6 +143,7 @@ alias acr='cygstart /c/Program\ Files\ \(x86\)/Adobe/Acrobat\ Reader\ DC/Reader/
 alias intelij="cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/ideaIC-2021.1.1.win/bin/idea64.exe"
 alias Idea="cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/ideaIC-2021.1.1.win/bin/idea64.exe"
 alias ccat='highlight -O ansi'
+alias s2n='~/.local/bin/send-2args-en "$NM" "$NM"'
 
 
 ########################
