@@ -268,6 +268,14 @@ prsn() {
 	source ~/majstaf/majrcs/bashrc-prompt-nerd-gredelonghi-en
 }
 
+psb() {
+	source ~/majstaf/majrcs/bashrc-prompt-bare-gredelonghi-en
+}
+
+psn() {
+	source ~/majstaf/majrcs/bashrc-prompt-nerd-gredelonghi-en
+}
+
 BrthReminder-c() {
 	~/.local/bin/BrthReminder-c2 "$@"
 }
