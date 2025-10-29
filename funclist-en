@@ -252,12 +252,20 @@ ure() {
 
 
 prompt-switch() {
-	choice=$(for FFF in ~/majstaf/majrcs/bashrc-prompt-*; do echo $(basename $FFF); done | fzf -e)
+	choice=$(for FFF in ~/majstaf/majrcs/bashrc-prompt-*; do echo $(basename $FFF); done | fzf -e --reverse --prompt="choose prompt: ")
 	source ~/majstaf/majrcs/${choice}
 }
 
 prs() {
 	prompt-switch
+}
+
+prsb() {
+	source ~/majstaf/majrcs/bashrc-prompt-bare-gredelonghi-en
+}
+
+prsn() {
+	source ~/majstaf/majrcs/bashrc-prompt-nerd-gredelonghi-en
 }
 
 BrthReminder-c() {
