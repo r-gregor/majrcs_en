@@ -53,6 +53,8 @@ export GOROOT='C:\Users\gregor.redelonghi\majstaf_en\majprogs_en\go1.23.0.window
 export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/go1.23.0.windows-amd64/go/bin"
 export TOTT=0
 export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/c3-windows-Release"
+
+# 20251111
 export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/godu_1.5.2_windows_amd64"
 
 
