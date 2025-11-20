@@ -239,11 +239,12 @@ neww() {
 }
 
 # 20240820
-hstl() {
-	gPth="$HOME/majstaf/seznami/hstl-en-$(date +'%Y%m%d-%H%M%S').txt"
-	history >> ${gPth}
-	echo "Sccesfully added commands from HISTORY to ${gPth}"
-}
+# 20251120: replaced by bash script '~/majstaf/majbin/hstl_en/hstl_en' and '~/majstaf/majbin/hstl_en/collect_hstl'
+# hstl() {
+# 	gPth="$HOME/majstaf/seznami/hstl-en-$(date +'%Y%m%d-%H%M%S').txt"
+# 	history >> ${gPth}
+# 	echo "Sccesfully added commands from HISTORY to ${gPth}"
+# }
 
 ure() {
 	gr_GO1="https://ris.jhl.si/"
