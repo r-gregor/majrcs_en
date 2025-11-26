@@ -75,41 +75,42 @@ explain () {
 	fi
 }
 
-# 20251126
+# 20250220
 export C_UGR="/c/Users/gregor.redelonghi"
 export C_UGRMS="${C_UGR}/majstaf_en"
 export GRDLNGH="${C_UGR}"
-export MJST="/home/gregor.redelonghi/majstaf"
-export EGT="${MJST}/engit"
+export MAJSTAFEN="/home/gregor.redelonghi/majstaf"
+export EGT="${MAJSTAFEN}/engit"
 export DOWNLOADS="${C_UGR}/Downloads"
-export DANES="${MJST}/_NERAZPOREJENO/__DANES__"
 export BRISI="${C_UGRMS}/BRISI"
-export G_ARHIVA="/g/PI/OPROJ/ARHIVA_PROJEKTI"
-# ------------------------------------
-export MJBN="${MJST}/majbin"
-export MTSYS="${MJST}/metsys"
-export MRCS="${MJST}/majrcs"
-export SZNM="${MJST}/seznami"
-export MSCRP="${MJST}/majscripts_en"
-export MSPPT="${MJST}/majsupport_en"
-export MCFG="${MJST}/majconfig"
-export MPRG="${MJST}/majprogs"
-# ------------------------------------
-export EGMJBN="${EGT}/majbin_en"
-export EGMRCS="${EGT}/majrcs_en"
-export EGMTSYS="${EGT}/metsys_en"
-export EGSZNM="${EGT}/seznami_en"
-export EGPRNS="${EGT}/prenos"
-export EGDTFJLS="${EGT}/dotfiles_en"
+export SCRPTS="${MAJSTAFEN}/majscripts"
+export SPPRT="${MAJSTAFEN}/support"
+export DANES="${MAJSTAFEN}/_NERAZPOREJENO/__DANES__"
+export EMBIN="${EGT}/majbin_en"
+export EMRCS="${EGT}/majrcs_en"
+export EMSYS="${EGT}/metsys_en"
+export EMSZN="${EGT}/seznami_en"
+export EPRNS="${EGT}/prenos"
+export EDTFJLS="${EGT}/dotfiles_en"
 export KNOWLEDGEDB="${EGT}/knowledgedb"
-# ------------------------------------
-export TSTNG="${MJST}/coding2/testing"
-export CTST="${TSTNG}/c_testing"
-export GTST="${TSTNG}/go_testing"
-export JTST="${TSTNG}/java_testing"
-export ZTST="${TSTNG}/zig_testing"
-export NTST="${TSTNG}/ncurses_testing"
-export RTST="${TSTNG}/rust_testing"
-# ------------------------------------
+export G_ARHIVA="/g/PI/OPROJ/ARHIVA_PROJEKTI"
+
+# 20250313
+export TESTINGEN="${MAJSTAFEN}/coding2/testing"
+export CTST="${TESTINGEN}/c_testing"
+export GTST="${TESTINGEN}/go_testing"
+export JTST="${TESTINGEN}/java_testing"
+export ZTST="${TESTINGEN}/zig_testing"
+export NTST="${TESTINGEN}/ncurses_testing"
+export RTST="${TESTINGEN}/rust_testing"
+
+export MBIN="${MAJSTAFEN}/majbin"
+export MRCS="${MAJSTAFEN}/majrcs"
+export MSYS="${MAJSTAFEN}/metsys"
+export MCFG="${MAJSTAFEN}/majconfig"
+export MPRG="${MAJSTAFEN}/majprogs"
+export MSZN="${MAJSTAFEN}/seznami"
+export MSPRT="${MAJSTAFEN}/support"
+# ---
 export PRXY='http://10.91.8.21:80'
 
