@@ -49,8 +49,8 @@ export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/${NODEJS}
 export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/dmd.2.093.1.windows/dmd2/windows/bin"
 
 # none /cygdrive cygdrive binary,posix=0,user 0 0
-export GOROOT='C:\Users\gregor.redelonghi\majstaf_en\majprogs_en\go1.23.0.windows-amd64\go'
-export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/go1.23.0.windows-amd64/go/bin"
+export GOROOT='C:\Users\gregor.redelonghi\majstaf_en\majprogs_en\go1.25.5.windows-amd64'
+export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/go1.25.5.windows-amd64/bin:/c/Users/gregor.redelonghi/go/bin"
 export TOTT=0
 export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/c3-windows-Release"
 
