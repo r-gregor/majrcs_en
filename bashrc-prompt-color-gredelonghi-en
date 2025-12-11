@@ -20,6 +20,11 @@ decorate_link() {
 	fi
 }
 
+# 20251211
+currtty=$(/usr/bin/tty)
+binfo="[${currtty}][\u]"
+
+
 # 20241014
 prompt_left() {
 
@@ -55,17 +60,21 @@ prompt_left() {
 		git_info=" git: $(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' -e 's/$/ /')"
 		/usr/bin/git status -b | grep -i "new file\|modified\|untracked\|deleted" &>/dev/null
 		if [ $? -eq 0 ]; then
-			echo -e "${orange_inv} \u@\h ${blue_inv} \w ${red_inv}${git_info}${off}"
+			# echo -e "${orange_inv} \u@\h ${blue_inv} \w ${red_inv}${git_info}${off}"
+			echo -e "${orange_inv} ${binfo} ${blue_inv} \w ${red_inv}${git_info}${off}"
 		else
 			/usr/bin/git status -b | grep -i "ahead\|pull" &>/dev/null
 			if [ $? -eq 0 ]; then
-				echo -e "${orange_inv} \u@\h ${blue_inv} \w ${green_white}${git_info}${off}"
+				# echo -e "${orange_inv} \u@\h ${blue_inv} \w ${green_white}${git_info}${off}"
+				echo -e "${orange_inv} ${binfo} ${blue_inv} \w ${green_white}${git_info}${off}"
 			else
-				echo -e "${orange_inv} \u@\h ${blue_inv} \w ${yllw_inv}${git_info}${off}"
+				# echo -e "${orange_inv} \u@\h ${blue_inv} \w ${yllw_inv}${git_info}${off}"
+				echo -e "${orange_inv} ${binfo} ${blue_inv} \w ${yllw_inv}${git_info}${off}"
 			fi
 		fi
 	else
-		echo -e " ${orange_inv} \u@\h ${blue_inv} \w ${off}"
+		# echo -e " ${orange_inv} \u@\h ${blue_inv} \w ${off}"
+		echo -e " ${orange_inv} ${binfo} ${blue_inv} \w ${off}"
 	fi
 }
 

@@ -16,6 +16,10 @@ decorate_link() {
 	fi
 }
 
+# 20251211
+currtty=$(/usr/bin/tty)
+
+
 # 20241014
 prompt_left() {
 
@@ -23,17 +27,21 @@ prompt_left() {
 		git_info="git: $(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' -e 's/$//')"
 		/usr/bin/git status -b | grep -i "new file\|modified\|untracked\|deleted" &>/dev/null
 		if [ $? -eq 0 ]; then
-			echo -e "[\w] -- [${git_info} | ADD/COMMIT]"
+			# echo -e "[\w] -- [${git_info} | ADD/COMMIT]"
+			echo -e "[${currtty}][\w] -- [${git_info} | ADD/COMMIT]"
 		else
 			/usr/bin/git status -b | grep -i "ahead\|pull" &>/dev/null
 			if [ $? -eq 0 ]; then
-				echo -e "[\w] -- [${git_info} | PUSH!]"
+				# echo -e "[\w] -- [${git_info} | PUSH!]"
+				echo -e "[${currtty}][\w] -- [${git_info} | PUSH!]"
 			else
-				echo -e "[\w] -- [${git_info}]"
+				# echo -e "[\w] -- [${git_info}]"
+				echo -e "[${currtty}][\w] -- [${git_info}]"
 			fi
 		fi
 	else
-		echo -e "[\w]"
+		# echo -e "[\w]"
+		echo -e "[${currtty}][\w]"
 	fi
 }
 
