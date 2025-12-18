@@ -126,10 +126,6 @@ yddr() {
 	yes | pddbak && yes | pddlog && RSYNC-BACKUP-en
 }
 
-pddr() {
-	pddbak && pddlog && RSYNC-BACKUP-en
-}
-
 sbr() {
 	clear && source ~/.bashrc
 }
