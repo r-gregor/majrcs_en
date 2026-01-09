@@ -72,8 +72,6 @@ alias ydlog='yes | pddlog'
 alias ydd='yes | pddbak && yes | pddlog'
 alias pozeni='source /home/gregor.redelonghi/majstaf/l2_coding_en/00_ukazi/run-oneliner.sh'
 alias lys='/opt/lynis-1.3.0/lynis --check-all -Q'
-alias bb='/home/gregor.redelonghi/majstaf/majbin/BrthReminder/BrthReminder_c'
-alias bbc='/home/gregor.redelonghi/majstaf/majbin/BrthReminder/BrthReminder_c_color'
 
 
 ###################
