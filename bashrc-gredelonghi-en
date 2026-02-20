@@ -45,6 +45,7 @@ export PATH="$PATH:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/zig-windows
 export PATH="$PATH:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/.cargo/bin"
 export PATH_TO_FX="C:\Users\gregor.redelonghi\majstaf_en\majprogs_en\javafx-sdk-11.0.2\lib"
 export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/${NODEJS}"
+export PATH="${PATH}:$(cygpath u "C:\Users\gregor.redelonghi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\Scripts")"
 
 # 20200923 add path for dmd (Dlang compiler)
 export PATH="${PATH}:/c/Users/gregor.redelonghi/majstaf_en/majprogs_en/dmd.2.093.1.windows/dmd2/windows/bin"
