@@ -65,16 +65,16 @@ prompt_left() {
 		else
 			/usr/bin/git status -b | grep -i "ahead\|pull" &>/dev/null
 			if [ $? -eq 0 ]; then
-				# echo -e "${orange_inv} \u@\h ${blue_inv} \w ${green_white}${git_info}${off}"
-				echo -e "${orange_inv} ${binfo} ${blue_inv} \w ${green_white}${git_info}${off}"
+				# echo -e "${orange_inv} ${binfo} ${blue_inv} \w ${green_white}${git_info}${off}"
+				echo -e "${orange_inv} \u@\h ${blue_inv} \w ${green_white}${git_info}${off}"
 			else
-				# echo -e "${orange_inv} \u@\h ${blue_inv} \w ${yllw_inv}${git_info}${off}"
-				echo -e "${orange_inv} ${binfo} ${blue_inv} \w ${yllw_inv}${git_info}${off}"
+				# echo -e "${orange_inv} ${binfo} ${blue_inv} \w ${yllw_inv}${git_info}${off}"
+				echo -e "${orange_inv} \u@\h ${blue_inv} \w ${yllw_inv}${git_info}${off}"
 			fi
 		fi
 	else
-		# echo -e " ${orange_inv} \u@\h ${blue_inv} \w ${off}"
-		echo -e " ${orange_inv} ${binfo} ${blue_inv} \w ${off}"
+		# echo -e " ${orange_inv} ${binfo} ${blue_inv} \w ${off}"
+		echo -e " ${orange_inv} \u@\h ${blue_inv} \w ${off}"
 	fi
 }
 
@@ -94,7 +94,8 @@ prompt_next() {
 # 20241014
 prompt() {
 	# PS1=$(printf "\n%*s\r%s\n%s " "$(($(tput cols) + 14))" "$(date_stamp)" "$(prompt_left)" "$(prompt_next)")
-	PS1=$(printf "%*s\r%s\n%s " "$(($(tput cols) + 14))" "$(date_stamp)" "$(prompt_left)" "$(prompt_next)")
+	# PS1=$(printf "%*s\r%s\n%s " "$(($(tput cols) + 14))" "$(date_stamp)" "$(prompt_left)" "$(prompt_next)")
+	PS1=$(printf "%s\n%s\n%s " "$(date_stamp)" "$(prompt_left)" "$(prompt_next)")
 }
 
 # 20241014

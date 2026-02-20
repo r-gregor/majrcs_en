@@ -6,6 +6,9 @@
 # 3 --> displaj last three parts of path: '.../subdir3/sundir2/subdir1'
 export PROMPT_DIRTRIM=3
 
+date_stamp() {
+	echo -e "\e[38;5;244m[$(date +"%Y-%m-%d")] [$(date +%T)]\e[0m"
+}
 # 20251211
 currtty=$(/usr/bin/tty)
 binfo="[${currtty}][\u]"
@@ -22,8 +25,9 @@ parse_git_branch() {
 
 prompt() {
 	# PS1=$(printf "\n%s\n%s%s " "$(prompt_left)" "$(parse_git_branch)" "$(prompt_next)")
-	PS1=$(printf "\n\[\e[01;38;5;75m\]${binfo} \w\n$(parse_git_branch)\[\e[1;31m\]\u21AA \[\e[0m\] ")
+	PS1=$(printf "%s\n\[\e[01;38;5;75m\]%s\n$(parse_git_branch)\[\e[1;31m\]\u21AA \[\e[0m\] " "$(date_stamp)" "\u@\w")
 }
 
 PROMPT_COMMAND=prompt
+
 

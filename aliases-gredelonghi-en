@@ -89,7 +89,8 @@ alias dboc='cd ${base_pth}/_C_and_Cpp'
 ###########################
 ### yt-dlp / youtube-dl ###
 ###########################
-ydl_cmd="/usr/local/bin/yt-dlp --proxy http://10.91.8.21:80"
+# ydl_cmd="/usr/local/bin/yt-dlp --proxy http://10.91.8.21:80"
+ydl_cmd="/usr/local/bin/yt-dlp3 --proxy http://10.91.8.21:80"
 alias ydlF="${ydl_cmd} -F"
 alias ydl="${ydl_cmd} -o '%(title)s_%(upload_date)s.%(ext)s'"
 alias ydlA="${ydl_cmd} -x --audio-format mp3"
