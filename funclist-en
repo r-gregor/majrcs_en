@@ -230,10 +230,6 @@ pcs() {
 	cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/processing-4.2-windows-x64/processing-4.2/processing.exe
 }
 
-neww() {
-	nohup /usr/bin/mintty -e /usr/bin/bash -c "~/majstaf/majbin/BrthReminder/BrthReminder-c-color.exe;cd;bash" 2>/dev/null
-}
-
 # 20240820
 # 20251120: replaced by bash script '~/majstaf/majbin/hstl_en/hstl_en' and '~/majstaf/majbin/hstl_en/collect_hstl'
 # hstl() {
