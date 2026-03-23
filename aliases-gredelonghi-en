@@ -164,6 +164,7 @@ NVOL_GDIR='/home/gregor.redelonghi/majstaf/engit/vlpprs_en'
 NVOL_WTREE='/c/Users/gregor.redelonghi/majstaf_en/en_staf/majvolpejprs'
 alias nvol="/usr/bin/git --git-dir=${NVOL_GDIR} --work-tree=${NVOL_WTREE}"
 alias gst='/usr/bin/git status'
+alias gp='git pull'
 
 
 ####################
