@@ -40,8 +40,8 @@ alias wdfh='watch -d -n1 df -h'
 ### file/dir manipulations/access ###
 #####################################
 alias cd='>/dev/null cd' # prevent cd to write absolute path at change ...
-alias opnu='source /home/gregor.redelonghi/majstaf/majbin/opn/opnu'
-alias opnw='source /home/gregor.redelonghi/majstaf/majbin/opn/opnw'
+alias opnu='source /home/gregor.redelonghi/majstaf/majbin/opn/opnu.sh'
+alias opnw='source /home/gregor.redelonghi/majstaf/majbin/opn/opnw.sh'
 alias godos='source /home/gregor.redelonghi/majstaf/l2_coding_en/gooo/godossrc.sh'
 alias ggo='source /home/gregor.redelonghi/majstaf/l2_coding_en/gooo/gooo.sh'
 alias stt='stat -c "%A %a %n" '
