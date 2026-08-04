@@ -35,6 +35,7 @@ alias clmn='cat -n | column -c $(tput cols)'
 alias ctn='cat -n'
 alias wdf='watch -d -n1 df'
 alias wdfh='watch -d -n1 df -h'
+alias hl='rg --passthru' # highlight
 
 #####################################
 ### file/dir manipulations/access ###
