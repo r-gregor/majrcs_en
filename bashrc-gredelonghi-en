@@ -89,6 +89,7 @@ export BRISI="${C_UGRMS}/BRISI"
 export G_ARHIVA="/g/PI/OPROJ/ARHIVA_PROJEKTI"
 # ------------------------------------
 export MJBN="${MJST}/majbin"
+export MJDT="${MJST}/majdata"
 export MTSYS="${MJST}/metsys"
 export MRCS="${MJST}/majrcs"
 export SZNM="${MJST}/seznami"
