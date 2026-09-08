@@ -210,6 +210,8 @@ o24() {
 }
 
 pwf() {
+	printf "Shuting down ... "
+	read -p "OK?"
 	t-gremdomov
 }
 
