@@ -189,7 +189,7 @@ ure() {
 }
 
 
-prompt-switch() {
+prompt_switch() {
 # descpt: prompt switch
 	choice=$(for FFF in ~/majstaf/majrcs/bashrc-prompt-*; do echo $(basename $FFF); done | fzf -e --reverse --prompt="choose prompt: ")
 	source ~/majstaf/majrcs/${choice}
@@ -197,7 +197,7 @@ prompt-switch() {
 
 prs() {
 # descpt: prompt switch
-	prompt-switch
+	prompt_switch
 }
 
 prsb() {
@@ -266,7 +266,7 @@ mcm() {
 	cygstart /c/Users/gregor.redelonghi/majstaf_en/majprogs_en/MultiCommander_X64/MultiCommander.exe
 }
 
-r-po() {
+r_po() {
 # descpt: start ris: planiranje odsotnosti
 	jhl_ure2="http://ris-jhl01.jhl.si/prodms/dbris/RIS4I_MAIN_4612?p_kateri=ris4i_dopusti"
 	cygstart "$gr_MSE" "${jhl_ure2}"
@@ -294,7 +294,6 @@ my() {
 	cygstart /c/users/gregor.redelonghi/majstaf_en/majprogs_en/cygwin64/bin/mintty.exe -s 180,40 -
 }
 
-# start fish
 fsm() {
 # descpt: start fish shell from mintty
 	cygstart /c/users/gregor.redelonghi/majstaf_en/majprogs_en/cygwin64/bin/mintty.exe -p 80,50 -s 180,45 -e /bin/fish
@@ -322,14 +321,14 @@ qtm() {
 	zze
 }
 
-cdpg-to-utf8() {
+cdpg_to_utf8() {
 # descpt: set system codepage from 852 (latin II) to 65001 (utf-8)
 	cmd /c chcp 65001 &> /dev/null
 }
 
 
 # set system codepage 65001 (utf-8) to 852 (latin II)
-cdpg-to-latin2() {
+cdpg_to_latin2() {
 # descpt: set system codepage 65001 (utf-8) to 852 (latin II)
 	cmd /c chcp 852 &> /dev/null
 }
