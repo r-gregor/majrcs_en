@@ -36,6 +36,7 @@ alias ctn='cat -n'
 alias wdf='watch -d -n1 df'
 alias wdfh='watch -d -n1 df -h'
 alias hl='rg --passthru' # highlight
+alias le='eza --color always --icons --header --color-scale-mode gradient -F --group-directories-first --show-symlinks'
 
 #####################################
 ### file/dir manipulations/access ###
