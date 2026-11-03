@@ -534,3 +534,8 @@ rtst() {
 	cd "${TSTNG}/rust_testing"
 }
 
+gtrmsv() {
+# descpt: show remotes in current git repository
+	git remote -v
+}
+
