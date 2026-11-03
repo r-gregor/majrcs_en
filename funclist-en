@@ -191,8 +191,9 @@ ure() {
 
 prompt_switch() {
 # descpt: prompt switch
-	choice=$(for FFF in ~/majstaf/majrcs/bashrc-prompt-*; do echo $(basename $FFF); done | fzf -e --reverse --prompt="choose prompt: ")
-	source ~/majstaf/majrcs/${choice}
+	# choice=$(for FFF in ~/majstaf/majrcs/bashrc-prompt-*; do echo $(basename $FFF); done | fzf --reverse -e --prompt="choose prompt: ")
+	choice=$(for FFF in $(ls -d ~/majstaf/majrcs/bashrc-prompt-*); do printf "${FFF##*/}\n"; done | fzf --reverse -e --prompt="select prompt: ")
+	source "${HOME}/majstaf/majrcs/${choice}"
 }
 
 prs() {
