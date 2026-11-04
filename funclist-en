@@ -539,3 +539,8 @@ gtrmsv() {
 	git remote -v
 }
 
+yrm() {
+	# descpt: yes | remove ... for any directory containing .git
+	yes | rm -rv "$@"
+}
+
