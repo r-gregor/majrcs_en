@@ -547,3 +547,8 @@ yrm() {
 	yes | rm -rv "$@"
 }
 
+gtn() {
+# descpt: git command to display result with NO pager (less)
+	/usr/bin/git --no-pager "$@"
+}
+
