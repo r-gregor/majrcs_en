@@ -552,3 +552,8 @@ gtn() {
 	/usr/bin/git --no-pager "$@"
 }
 
+dlb() {
+# descpt: cd into '~/.local/bin'
+	cd "${HOME}/.local/bin"
+}
+
